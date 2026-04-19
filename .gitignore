@@ -1,0 +1,54 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+build/
+dist/
+
+# ---- Virtual environments ----
+.venv/
+venv/
+env/
+ENV/
+UI/.venv/
+
+# ---- Jupyter ----
+.ipynb_checkpoints/
+
+# ---- IDE / editors ----
+.vscode/
+.idea/
+*.swp
+
+# ---- OS ----
+.DS_Store
+Thumbs.db
+
+# ---- Model weights (hosted on Google Drive, not git) ----
+# Total size is ~4 GB across all trained models. See README for download link.
+models/
+
+# ---- Raw / processed dataset files ----
+# Small samples in data/ are OK; bulk data stays out.
+data/raw/
+data/processed/
+data/*.parquet
+data/*.arrow
+*.csv
+
+# Keep sample / demo files
+!data/correct_treats.jsonl
+!data/*_sample.*
+
+# ---- Training artifacts ----
+runs/
+wandb/
+checkpoints/
+logs/
+*.log
+
+# ---- Secrets / env ----
+.env
+.env.local
+.streamlit/secrets.toml

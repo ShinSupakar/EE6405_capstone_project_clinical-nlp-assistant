@@ -1,0 +1,29 @@
+# Pinned to what UI/.venv actually runs on — these are the exact versions
+# the demo was validated against. Loosening any of these needs a re-smoke-test.
+# Python 3.9 venv.
+
+# Core UI
+streamlit==1.50.0
+
+# Deep-learning runtime
+torch==2.2.2
+transformers==4.57.6
+tokenizers==0.22.2
+safetensors==0.7.0
+sentencepiece==0.2.1          # BART tokenizer needs this
+
+# spaCy (SOAP sentence splitting + teammate's spaCy NER model).
+# Pinned to 3.7.x because 3.8+ requires thinc>=8.3.12 which only ships
+# wheels for Python 3.10+. The venv is on Python 3.9.
+spacy==3.7.5
+
+# CRF layer for the BiLSTM-CRF checkpoint (teammate used torchcrf).
+pytorch-crf==0.7.2
+
+# Data handling
+numpy==1.26.4
+pandas==2.3.3
+scikit-learn==1.6.1
+
+# Drive download helper (optional — for Phase 0 checkpoint fetch)
+gdown==5.2.2
