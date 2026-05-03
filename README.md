@@ -150,4 +150,4 @@ A short walkthrough of the three-tab pipeline is in the project presentation. Th
 
 ## License
 
-MIT — see `LICENSE` (optional; pick whatever your team prefers or omit for a private repo).
+MIT — see `LICENSE` 
